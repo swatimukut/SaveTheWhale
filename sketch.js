@@ -122,7 +122,7 @@ function draw() {
       textFont("Comic Sans MS");
       text("Score: "+score,50,50);
       
-    whale.scale=0.25;
+    whale.scale=0.2;
     //whale.collide(ground);
     if(keyDown("left")&& whale.y >= 300) {
         jump.play();
@@ -132,7 +132,7 @@ function draw() {
         whale.changeAnimation("running", whale_image);
     }
 
-    if(keyDown("right")&&whale.y>=300){
+    if(keyDown("right")&&whale.y>=200){
         jump.play();
         whale.changeAnimation("right",whale_image2);
         whale.velocityY = -10;
